@@ -34,12 +34,12 @@ def determine_notify(percentage: int) -> None:
             "充電完成",
             "電量達到 100%，請拔除插頭。",
         ])
-    if not is_charging_excepted and percentage == 95:
+    if not is_charging_excepted and percentage == 96:
         is_charging_excepted = True
         subprocess.run([
             'notify-send',
             "放電完成",
-            "電量剩餘 95%，請插入插頭。",
+            "電量剩餘 96%，請插入插頭。",
         ])
 
 
